@@ -30,6 +30,7 @@ public class CustomerAccountTest {
     public void setUp() throws Exception {
     	//setUp appelée avant chaque appel de test, un compte vide
         customerAccount = new CustomerAccount();
+        rule = new CustomerAccountRule();
     }
     
     /**
@@ -54,7 +55,23 @@ public class CustomerAccountTest {
     	assertEquals(true, true);
     }
       
-    
+    /**
+     * Tests that an illegal withdrawal throws the expected exception.
+     * Use the logic contained in CustomerAccountRule; feel free to refactor the existing code.
+     */
+    @Test
+    public void testWithdrawAndReportBalanceIllegalBalance() {
+    	customerAccount.setBalance(1000.0) ;
+    	try {
+    		assertEquals(customerAccount.getBalance().compareTo(1000.0), 0);
+    		assertEquals(customerAccount.withdrawAndReportBalance(800.0, rule ).compareTo(200.0),0);
+			assertEquals(customerAccount.withdrawAndReportBalance(800.0, rule ), new IllegalBalanceException(1000.0));
+			
+		} catch (IllegalBalanceException e) {
+			System.out.println(e.toString());
+		}
+    	
+    } 
   
   
 }

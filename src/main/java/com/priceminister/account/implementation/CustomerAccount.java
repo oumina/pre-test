@@ -8,18 +8,25 @@ public class CustomerAccount implements Account {
     private double balance;
 
 	public void add(Double addedAmount) {
-        // TODO Auto-generated method stub
+       balance+=addedAmount ;
     }
 
     public Double getBalance() {
-        // TODO Auto-generated method stub
         return balance;
     }
 
     public Double withdrawAndReportBalance(Double withdrawnAmount, AccountRule rule) 
     		throws IllegalBalanceException {
-        // TODO Auto-generated method stub
-        return null;
+    	if (!rule.withdrawPermitted(balance)){
+    		throw new IllegalBalanceException(balance);
+    	}else {
+    		if(balance >withdrawnAmount){
+                balance -= withdrawnAmount ;
+            }else{
+            	throw new IllegalBalanceException(balance);
+            }	
+    	}
+        return balance;
     }
 
 	public void setBalance(double balance) {

@@ -26,6 +26,10 @@ public interface Account {
      * @return the account's balance
      */
     public Double getBalance();
-
+   
+    /**
+     * Sets the current account balance.
+     * @return 
+     */
 	public void setBalance(double d);
 }
