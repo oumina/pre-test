@@ -30,7 +30,6 @@ public class CustomerAccountTest {
     public void setUp() throws Exception {
     	//setUp appelée avant chaque appel de test, un compte vide
         customerAccount = new CustomerAccount();
-       
     }
     
     /**
@@ -56,5 +55,6 @@ public class CustomerAccountTest {
     }
       
     
+  
   
 }
