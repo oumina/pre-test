@@ -22,4 +22,9 @@ public class CustomerAccount implements Account {
         return null;
     }
 
+	public void setBalance(double balance) {
+		this.balance=balance;
+		
+	}
+
 }

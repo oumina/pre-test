@@ -26,4 +26,6 @@ public interface Account {
      * @return the account's balance
      */
     public Double getBalance();
+
+	public void setBalance(double d);
 }

@@ -48,7 +48,10 @@ public class CustomerAccountTest {
      */
     @Test
     public void testAddPositiveAmount() {
-    	customerAccount.setBalance(100) ;
+    	customerAccount.setBalance(100.0) ;
+    	assertEquals(customerAccount.getBalance().compareTo(100.0), 0);
+    	customerAccount.add(200.0);
+    	assertEquals(customerAccount.getBalance().compareTo(300.0), 0);
     	assertEquals(true, true);
     }
       
