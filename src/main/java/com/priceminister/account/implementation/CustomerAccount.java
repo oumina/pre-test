@@ -1,6 +1,7 @@
 package com.priceminister.account.implementation;
 
 import com.priceminister.account.*;
+import com.priceminister.accountfunctionalexception.IllegalBalanceException;
 
 
 public class CustomerAccount implements Account {

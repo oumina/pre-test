@@ -1,4 +1,4 @@
-package com.priceminister.account;
+package com.priceminister.accountfunctionalexception;
 
 
 public class IllegalBalanceException extends Exception {

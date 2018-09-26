@@ -6,6 +6,7 @@ import static org.junit.Assert.*;
 import org.junit.*;
 
 import com.priceminister.account.implementation.*;
+import com.priceminister.accountfunctionalexception.IllegalBalanceException;
 
 
 /**
