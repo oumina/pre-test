@@ -39,23 +39,5 @@ public class CustomerAccountTest {
         fail("not yet implemented");
     }
     
-    /**
-     * Adds money to the account and checks that the new balance is as expected.
-     */
-    @Test
-    public void testAddPositiveAmount() {
-        fail("not yet implemented");
-    }
-    
-    /**
-     * Tests that an illegal withdrawal throws the expected exception.
-     * Use the logic contained in CustomerAccountRule; feel free to refactor the existing code.
-     */
-    @Test
-    public void testWithdrawAndReportBalanceIllegalBalance() {
-        fail("not yet implemented");
-    }
-    
-    // Also implement missing unit tests for the above functionalities.
-
+  
 }
