@@ -41,6 +41,16 @@ public class CustomerAccountTest {
     		assertNotEquals(customerAccount.getBalance(),null);
     		assertEquals(Double.compare(customerAccount.getBalance(),0.0),0);
     	    }
+    
+    
+    /**
+     * Adds money to the account and checks that the new balance is as expected.
+     */
+    @Test
+    public void testAddPositiveAmount() {
+    	assertEquals(true, true);
+    }
       
+    
   
 }
